@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aurélie — Concepteur Développeur d'Application</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@13/font/simple-icons.min.css">
+</head>
+<body>
+
+  <!-- ====== NAVIGATION ====== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">A<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">À propos</a></li>
+        <li><a href="#parcours" class="nav-link">Parcours</a></li>
+        <li><a href="#technologies" class="nav-link">Technologies</a></li>
+        <li><a href="#projets" class="nav-link">Projets</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ====== HERO BANNER ====== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-tag">Disponible dès juillet 2026</p>
+      <h1 class="hero-title">
+        Hello, I'm <span class="highlight">Aurélie</span>
+      </h1>
+      <p class="hero-subtitle">
+        <span class="typed-text" id="typed"></span><span class="cursor">|</span>
+      </p>
+      <p class="hero-desc">
+        Alternante en conception et développement d'applications,<br />
+        passionnée par tout le cycle de création, de la maquette à la mise en prod,
+        avec le souci constant de l'expérience utilisateur.
+      </p>
+      <div class="hero-actions">
+        <a href="#about" class="btn btn-primary">Découvrir mon profil</a>
+        <a href="#contact" class="btn btn-outline">Me contacter</a>
+      </div>
+    </div>
+    <a href="#about" class="hero-scroll" aria-label="Défiler vers le bas">
+      <span class="scroll-arrow"></span>
+    </a>
+  </section>
+
+  <!-- ====== À PROPOS ====== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">À propos de moi</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="about-avatar">
+            <div class="avatar-placeholder" style="background: linear-gradient(135deg, #a78bfa, #60a5fa);">
+              <img src="./img/perso.png" alt="Ma photo" style="width: 90%; height: 90%; object-fit: cover; object-position: center;">
+            </div>
+            <div class="avatar-ring"></div>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <p class="about-lead">
+            Je suis développeuse en alternance, actuellement en formation de
+            <strong>Concepteur Développeur d'Applications</strong>, avec une fin de formation prévue en <strong>juillet 2026</strong>.
+          </p>
+          <p>Après cinq ans en tant que diététicienne, j'ai découvert une nouvelle passion pour le développement web
+            — un domaine qui correspond à ma curiosité, mon goût pour la résolution de problèmes et mon envie de créer des
+            choses concrètes et utiles. Cette reconversion n'est pas un hasard : les mêmes qualités qui faisaient mon quotidien —
+            l'écoute, l'analyse des besoins, la recherche de solutions adaptées — sont au cœur de ce métier. Aujourd'hui en alternance
+            chez Filieris au sein de la DSI, je continue d'apprendre chaque jour et je m'épanouis pleinement dans cet environnement
+            technique et collaboratif.
+          </p>
+          <p>
+            Curieuse et rigoureuse, je suis passionnée par tout le cycle de création d'un projet : de la conception des
+            idées à leur mise en œuvre, en passant par l'échange avec les clients pour comprendre et concrétiser leurs besoins.
+            J'aime autant soigner les interfaces que construire des architectures back-end solides. Je m'adapte facilement au
+            sein d'une équipe et reste constamment en veille sur les nouvelles technologies, convaincue qu'on n'arrête jamais
+            vraiment d'apprendre dans ce métier.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number" data-target="2">0</span>
+              <span class="stat-label">Ans d'alternance</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="2">0</span>
+              <span class="stat-label">Ans experiences</span>
+            </div>
+            <div class="stat">
+              <span style="display: inline-flex; align-items: baseline;">
+                <span class="stat-plus">+</span><span class="stat-number" data-target="10">0</span>
+              </span>
+              <span class="stat-label">Projets réalisés</span>
+            </div>
+            <div class="stat">
+               <span style="display: inline-flex; align-items: baseline;">
+                <span class="stat-plus">+</span><span class="stat-number" data-target="8">0</span>
+              </span>
+              <span class="stat-label">Technologies maîtrisées</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PARCOURS ====== -->
+  <section class="section section-dark" id="parcours">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Mon parcours</h2>
+      </div>
+      <div class="timeline">
+
+        <!-- Expérience en cours -->
+        <div class="timeline-item reveal" data-side="left">
+          <div class="timeline-dot active"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">2024 — 2026</span>
+            <h3 class="timeline-title">Alternante — Conception et Développement d'Application</h3>
+            <p class="timeline-company">DSI Filieris · Alternance</p>
+            <p class="timeline-desc">
+              Développement d'une application de gestion, avec intégration au sein d'une équipe de développement en méthodologie Agile (daily stand-up),
+              participation active à la répartition des tâches et au développement de fonctionnalités clés
+              en réponse aux besoins métiers.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Django</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Postgresql</span>
+              <span class="tag">Google Cloud</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Bootstrap</span>
+              <span class="tag">Gitlab</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formation CDA -->
+        <div class="timeline-item reveal" data-side="right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">2024 — 2026</span>
+            <h3 class="timeline-title">Titre professionnel — Concepteur Développeur d'Applications</h3>
+            <p class="timeline-company">École O'Clock · Bac+3/4</p>
+            <p class="timeline-desc">
+              Rythme de deux semaines en entreprise et une semaine en cours. Découverte sur une multitude de technologies
+              et connaissances, suivi de TP et enfin un projet complet de fin d'année en groupe.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">Dev FullStack</span>
+              <span class="tag">CI/CD</span>
+              <span class="tag">Clean Architecture</span>
+              <span class="tag">Orchestration</span>
+              <span class="tag">Cybersécurité</span>
+              <span class="tag">Introduction à l'IA</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Expérience pro -->
+        <div class="timeline-item reveal" data-side="left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">2020 — 2024</span>
+            <h3 class="timeline-title">Diététicienne thérapeutique et restauration collective</h3>
+            <p class="timeline-company">Centre de santé et maison de retraite</p>
+            <p class="timeline-desc">
+              Coordination et gestion nutritionnelle en environnement médical,
+              collaboration avec une équipe pluridisciplinaire (médecins, infirmiers, direction)
+              centrée sur le bien-être patient. Pilotage de projets d'amélioration continue,
+              analyse des besoins nutritionnels et conception de solutions personnalisées.
+              Rédaction de documentation technique (fiches, protocoles) et gestion de plannings menus.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">Curiosité professionnelle</span>
+              <span class="tag">Intégration et adaptation</span>
+              <span class="tag">Organisation</span>
+              <span class="tag">Autonomie professionnelle</span>
+              <span class="tag">Travail en équipe</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formation précédente -->
+        <div class="timeline-item reveal" data-side="right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">2017 — 2019</span>
+            <h3 class="timeline-title">BTS DIÉTÉTIQUE</h3>
+            <p class="timeline-company">Lycée Notre Dame Mende · Bac+2</p>
+          </div>
+        </div>
+
+        <!-- Bac -->
+        <div class="timeline-item reveal" data-side="left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">2015</span>
+            <h3 class="timeline-title">Baccalauréat Scientifique</h3>
+            <p class="timeline-company">Lycée Bellevue Alès </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== TECHNOLOGIES ====== -->
+  <section class="section" id="technologies">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Technologies</h2>
+      </div>
+
+      <div class="tech-categories">
+
+        <!-- FRONTEND -->
+        <div class="tech-category reveal">
+          <h3 class="tech-cat-title">Frontend</h3>
+          <div class="tech-grid">
+            <div class="tech-card"><div class="tech-logo tech-html"><i class="si si-html5"></i></div><span>HTML5</span></div>
+            <div class="tech-card"><div class="tech-logo tech-css"><i class="si si-css3"></i></div><span>CSS3</span></div>
+            <div class="tech-card"><div class="tech-logo tech-js"><i class="si si-javascript"></i></div><span>JavaScript</span></div>
+            <div class="tech-card"><div class="tech-logo tech-ts"><i class="si si-typescript"></i></div><span>TypeScript</span></div>
+            <div class="tech-card"><div class="tech-logo tech-react"><i class="si si-react"></i></div><span>React</span></div>
+            <div class="tech-card"><div class="tech-logo tech-angular"><i class="si si-angular"></i></div><span>Angular</span></div>
+            <div class="tech-card"><div class="tech-logo tech-tailwind"><i class="si si-tailwindcss"></i></div><span>TailwindCSS</span></div>
+            <div class="tech-card"><div class="tech-logo tech-bootstrap"><i class="si si-bootstrap"></i></div><span>Bootstrap 5</span></div>
+            <div class="tech-card"><div class="tech-logo tech-sass"><i class="si si-sass"></i></div><span>Sass</span></div>
+            <div class="tech-card"><div class="tech-logo tech-rn"><i class="si si-react"></i></div><span>React Native</span></div>
+          </div>
+        </div>
+
+        <!-- BACKEND -->
+        <div class="tech-category reveal">
+          <h3 class="tech-cat-title">Backend</h3>
+          <div class="tech-grid">
+            <div class="tech-card"><div class="tech-logo tech-node"><i class="si si-nodedotjs"></i></div><span>Node.js</span></div>
+            <div class="tech-card"><div class="tech-logo tech-nest"><i class="si si-nestjs"></i></div><span>NestJS</span></div>
+            <div class="tech-card"><div class="tech-logo tech-express"><i class="si si-express"></i></div><span>Express.js</span></div>
+            <div class="tech-card"><div class="tech-logo tech-python"><i class="si si-python"></i></div><span>Python</span></div>
+            <div class="tech-card"><div class="tech-logo tech-django"><i class="si si-django"></i></div><span>Django</span></div>
+            <div class="tech-card"><div class="tech-logo tech-drf"><i class="si si-django"></i></div><span>Django REST</span></div>
+            <div class="tech-card"><div class="tech-logo tech-graphql"><i class="si si-graphql"></i></div><span>GraphQL</span></div>
+            <div class="tech-card"><div class="tech-logo tech-apollo"><i class="si si-apollographql"></i></div><span>Apollo</span></div>
+          </div>
+        </div>
+
+        <!-- BASES DE DONNÉES & ORM -->
+        <div class="tech-category reveal">
+          <h3 class="tech-cat-title">Bases de données & ORM</h3>
+          <div class="tech-grid">
+            <div class="tech-card"><div class="tech-logo tech-sql"><i class="si si-postgresql"></i></div><span>PostgreSQL</span></div>
+            <div class="tech-card"><div class="tech-logo tech-mongo"><i class="si si-mongodb"></i></div><span>MongoDB</span></div>
+            <div class="tech-card"><div class="tech-logo tech-prisma"><i class="si si-prisma"></i></div><span>Prisma</span></div>
+          </div>
+        </div>
+
+        <!-- CLOUD & DEVOPS -->
+        <div class="tech-category reveal">
+          <h3 class="tech-cat-title">Cloud & DevOps</h3>
+          <div class="tech-grid">
+            <div class="tech-card"><div class="tech-logo tech-gcp"><i class="si si-googlecloud"></i></div><span>Google Cloud</span></div>
+            <div class="tech-card"><div class="tech-logo tech-docker"><i class="si si-docker"></i></div><span>Docker</span></div>
+            <div class="tech-card"><div class="tech-logo tech-git"><i class="si si-git"></i></div><span>Git / GitHub</span></div>
+            <div class="tech-card"><div class="tech-logo tech-ghactions"><i class="si si-githubactions"></i></div><span>GitHub Actions</span></div>
+            <div class="tech-card"><div class="tech-logo tech-gitlab"><i class="si si-gitlab"></i></div><span>GitLab CI/CD</span></div>
+          </div>
+        </div>
+
+        <!-- OUTILS -->
+        <div class="tech-category reveal">
+          <h3 class="tech-cat-title">Outils</h3>
+          <div class="tech-grid">
+            <div class="tech-card"><div class="tech-logo tech-figma"><i class="si si-figma"></i></div><span>Figma</span></div>
+            <div class="tech-card"><div class="tech-logo tech-trello"><i class="si si-trello"></i></div><span>Trello</span></div>
+          </div>
+        </div>
+
+        <!-- ENVIRONNEMENT -->
+        <div class="tech-category reveal">
+          <h3 class="tech-cat-title">Environnement</h3>
+          <div class="tech-grid">
+            <div class="tech-card"><div class="tech-logo tech-windows"><i class="si si-windows"></i></div><span>Windows</span></div>
+            <div class="tech-card"><div class="tech-logo tech-macos"><i class="si si-apple"></i></div><span>macOS</span></div>
+            <div class="tech-card"><div class="tech-logo tech-ubuntu"><i class="si si-ubuntu"></i></div><span>Ubuntu</span></div>
+            <div class="tech-card"><div class="tech-logo tech-debian"><i class="si si-debian"></i></div><span>Debian</span></div>
+          </div>
+        </div>
+
+        <!-- IA -->
+        <div class="tech-category reveal">
+          <h3 class="tech-cat-title">Intelligence Artificielle</h3>
+          <div class="tech-grid">
+            <div class="tech-card"><div class="tech-logo tech-chatgpt"><i class="si si-openai"></i></div><span>ChatGPT</span></div>
+            <div class="tech-card"><div class="tech-logo tech-claude"><i class="si si-anthropic"></i></div><span>Claude</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PROJETS ====== -->
+  <section class="section section-dark" id="projets">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Mes projets</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- ── PROJET 1 ── -->
+        <article class="project-card reveal">
+          <div class="project-banner" style="background-image: url('./img/poketeam.png');  background-size: cover;">
+            <!-- Badge optionnel : retire le commentaire pour l'afficher -->
+            <!-- <span class="project-badge">Featured</span> -->
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">PokeTeam</h3>
+            <p class="project-desc">
+              Projet personnel qui permet de consulter un pokedex et de créer son équipe de Pokémon selon les
+              préférences. Consommation d'une API externe Tyradex. Hébergé sur Surge.
+            </p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Redux</span>
+              <span class="tag">Typescript</span>
+              <span class="tag">ChakraUI</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/AurelieMous/poke-team" class="project-link" target="_blank" aria-label="Voir le code source">
+              <!-- Icône GitHub -->
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="https://poke-team.surge.sh/" class="project-link project-link-demo" target="_blank" aria-label="Voir la démo">
+              <!-- Icône lien externe -->
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Démo live
+            </a>
+          </div>
+        </article>
+
+        <!-- ── PROJET 2 ── -->
+        <article class="project-card reveal">
+          <div class="project-banner" style="background-image: url('./img/zombieland.png');  background-size: cover;">
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Zombieland</h3>
+            <p class="project-desc">
+              Projet de fin de formation, application web complète pour un parc fictif post-apocalyptique.
+              Développement fullstack (frontend & backend) incluant un back-office administrateur,
+              un système de réservation de billets en ligne, une messagerie interne et une page
+              d'informations du parc.
+            </p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Zustand</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">API REST</span>
+              <span class="tag">Prisma</span>
+              <span class="tag">NestJS</span>
+              <span class="tag">Docker & Docker compose</span>
+              <span class="tag">CI/CD</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/AurelieMous/projet-zombieland" class="project-link" target="_blank">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="https://projet-zombieland.vercel.app/" target="_blank" class="project-link project-link-demo">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Démo live
+            </a>
+          </div>
+        </article>
+
+        <!-- ── PROJET 3 ── -->
+        <article class="project-card reveal">
+          <div class="project-banner" style="background-image: url('./img/livre-graphql.jpg');  background-size: cover;">
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">BookQL</h3>
+            <p class="project-desc">
+              Projet personnel pour développer davantage mes compétences avec GraphQL.
+              Petite API permettant de référencer et gérer une collection de livres.
+            </p>
+            <div class="project-tags">
+              <span class="tag">NodeJS</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">GraphQL</span>
+              <span class="tag">Apollo Server</span>
+              <span class="tag">Docker</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/AurelieMous/livre-graphQL" target="_blank" class="project-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </article>
+
+        <!-- ── PROJET 4 ── -->
+        <article class="project-card reveal">
+          <div class="project-banner" style="background-image: url('./img/prisme.png');  background-size: cover;">
+            <span class="project-badge">Work in progress</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Prisme</h3>
+            <p class="project-desc">
+              Projet personnel sur une application de photo gallery avec consommation d'une API externe
+              Pexels.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Angular</span>
+              <span class="tag">Tailwind</span>
+              <span class="tag">Typescript</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/AurelieMous/photo-gallery-angular/tree/develop" target="_blank" class="project-link">GitHub</a>
+            <!-- <a href="LIEN_DEMO" class="project-link project-link-demo">Démo live</a> -->
+          </div>
+        </article>
+
+        <!-- ── PROJET 5 ── -->
+        <article class="project-card reveal">
+          <div class="project-banner" style="background-image: url('./img/uranus.jpg');  background-size: cover;">
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Uranus</h3>
+            <p class="project-desc">
+              Projet réalisé en entreprise, application web de référencement des centres de santé Filieris, intégrant
+              des workflows de gestion des modifications de centres et de suivi comptable. Connectivité avec Google Business
+              afin de mettre a jour les structures après modification via un CRON linux.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Angular</span>
+              <span class="tag">Tailwind</span>
+              <span class="tag">Typescript</span>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- ── AJOUTER UN PROJET ──
+
+        <article class="project-card reveal">
+          <div class="project-banner" style="--banner-color-a: #COULEUR_A; --banner-color-b: #COULEUR_B;">
+            <span class="project-number">0N</span>
+            <span class="project-badge">Badge optionnel</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Nom du projet</h3>
+            <p class="project-desc">Description du projet.</p>
+            <div class="project-tags">
+              <span class="tag">Techno 1</span>
+              <span class="tag">Techno 2</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="LIEN_GITHUB" class="project-link">GitHub</a>
+            <a href="LIEN_DEMO" class="project-link project-link-demo">Démo live</a>
+          </div>
+        </article>
+        ── -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONTACT ====== -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Contact</h2>
+      </div>
+      <div class="contact-wrapper reveal">
+        <p class="contact-desc">
+          Je suis disponible dès <strong>juillet 2026</strong> pour un poste de conception et développement.
+          N'hésitez pas à me contacter pour discuter de vos projets.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:votre@email.fr" class="contact-card">
+            <span class="contact-icon"><i class="fa-regular fa-envelope"></i></span>
+            <span>aurelie.moustardier@outlook.fr</span>
+          </a>
+          <a href="https://www.linkedin.com/in/aur%C3%A9lie-moustardier-7393672b2/" target="_blank" rel="noopener" class="contact-card">
+            <span class="contact-icon">
+              <i class="fa-brands fa-linkedin"></i>
+            </span>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/AurelieMous" target="_blank" rel="noopener" class="contact-card">
+            <span class="contact-icon">
+              <i class="fa-brands fa-github"></i>
+            </span>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container">
+      <p>Fait avec passion par <strong>Aurélie</strong> · 2026</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
