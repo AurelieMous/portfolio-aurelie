@@ -196,6 +196,18 @@ img { max-width: 100%; }
   transition: var(--transition);
 }
 
+.nav-social {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-social a:hover {
+  color: var(--text-muted);
+  transition: color var(--transition);
+}
+
 /* ============================================================
    HERO BANNER
    ============================================================ */
@@ -710,6 +722,7 @@ img { max-width: 100%; }
 .tech-drf       { background: linear-gradient(135deg, #a30000, #d32f2f); color: #fff; }
 .tech-graphql   { background: linear-gradient(135deg, #e535ab, #c2185b); color: #fff; }
 .tech-apollo    { background: linear-gradient(135deg, #311c87, #5c37d6); color: #fff; }
+.tech-java      { background: linear-gradient(135deg, #b07219, #e09f00); color: #fff; }
 /* Bases de données & ORM */
 .tech-sql       { background: linear-gradient(135deg, #336791, #4a90d9); color: #fff; }
 .tech-mongo     { background: linear-gradient(135deg, #13aa52, #0f8a41); color: #fff; }
